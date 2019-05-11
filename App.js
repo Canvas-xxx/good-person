@@ -7,7 +7,12 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import { Platform, StyleSheet } from 'react-native';
+import Layout from './src/app/components/layout'
+
+import Splash from './src/app/features/splash/components'
+import Login from './src/app/features/login/components'
+import Home from './src/app/features/home/components'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -20,11 +25,19 @@ type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
+      // <View style={styles.container}>
+      //   <Text style={styles.welcome}>Welcome to React Native!</Text>
+      //   <Text style={styles.instructions}>To get started, edit App.js</Text>
+      //   <Text style={styles.instructions}>{instructions}</Text>
+      // </View>
+      <Layout>
+        {/* <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
-      </View>
+        <Text style={styles.instructions}>{instructions}</Text> */}
+        {/* <Splash></Splash> */}
+        {/* <Login></Login> */}
+        <Home></Home>
+      </Layout>
     );
   }
 }
