@@ -13,6 +13,9 @@ import Layout from './src/app/components/layout'
 import Splash from './src/app/features/splash/components'
 import Login from './src/app/features/login/components'
 import Home from './src/app/features/home/components'
+import Report from './src/app/features/report/components'
+import News from './src/app/features/news/components'
+import Help from './src/app/features/help/components'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -36,7 +39,10 @@ export default class App extends Component<Props> {
         <Text style={styles.instructions}>{instructions}</Text> */}
         {/* <Splash></Splash> */}
         {/* <Login></Login> */}
-        <Home></Home>
+        {/* <Home></Home> */}
+        {/* <Report></Report> */}
+        {/* <News></News> */}
+        <Help></Help>
       </Layout>
     );
   }

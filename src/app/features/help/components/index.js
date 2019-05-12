@@ -1,42 +1,38 @@
 import React, { Component } from "react";
-import { View, Button } from "react-native";
+import { View, Button, Text } from "react-native";
 import styles from "./styles";
 
-class Home extends Component {
+class Help extends Component {
     static navigationOptions = {
-        header: 'Home Screen'
+        header: 'Help Screen'
     };
 
     render() {
         return (
           <View style={styles.container}>
+            <Text style={styles.header}>ช่วยเหลือ</Text>
             <View style={styles.gridView}>
                 <View>
                     <View style={styles.gridBox}>
-                        <Button title="ทำความดี"></Button>
+                        <Button title="ตำรวจ"></Button>
                     </View>
                     <View style={styles.gridBox}>
-                        <Button title="แจ้งเหตุ"></Button>
+                        <Button title="โรงพยาบาล"></Button>
                     </View>
                 </View>
 
                 <View>
                     <View style={styles.gridBox}>
-                        <Button title="ร้องเรียน"></Button>
+                        <Button title="กู้ภัย"></Button>
                     </View>
                     <View style={styles.gridBox}>
-                        <Button title="แผนที่"></Button>
+                        <Button title="ดับเพลง"></Button>
                     </View>
                 </View>
-            </View>
-
-            <View>
-                <Button title="แจ้งข่าวสาร"></Button>
-                <Button title="ช่วยเหลือ"></Button>
             </View>
           </View>
         );
     }
 }
 
-export default Home;
+export default Help
