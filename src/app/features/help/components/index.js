@@ -4,10 +4,6 @@ import styles from "./styles";
 import Layout from '../../../components/layout'
 
 class Help extends Component {
-    static navigationOptions = {
-        title: 'Help Screen'
-    };
-
     render() {
         return (
             <Layout>

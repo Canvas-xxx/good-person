@@ -4,10 +4,6 @@ import styles from "./styles";
 import Layout from '../../../components/layout'
 
 class Login extends Component {
-    static navigationOptions = {
-      title: 'Login Screen'
-    };
-
     render() {
         return (
           <Layout>

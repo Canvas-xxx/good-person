@@ -4,13 +4,6 @@ import styles from "./styles";
 import Layout from '../../../components/layout'
 
 class Home extends Component {
-    static navigationOptions = {
-        title: 'Home Screen',
-        header: {
-            visible: false,
-        }
-    };
-
     render() {
         return (
          <Layout>

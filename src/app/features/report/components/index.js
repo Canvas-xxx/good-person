@@ -4,10 +4,6 @@ import styles from './styles'
 import Layout from '../../../components/layout'
 
 class Report extends Component {
-    static navigationOptions = {
-        title: 'Report Screen'
-    };
-
     render() {
         return(
             <Layout>

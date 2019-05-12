@@ -4,10 +4,6 @@ import styles from './styles'
 import Layout from '../../../components/layout'
 
 class News extends Component {
-    static navigationOptions = {
-        title: 'News Screen'
-    };
-
     render() {
         return(
             <Layout>
