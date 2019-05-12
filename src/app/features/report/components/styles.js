@@ -17,7 +17,9 @@ const styles = StyleSheet.create({
     imageContain: {
         width: DeviceWidth,
         height: 300,
-        backgroundColor: 'white'
+        backgroundColor: 'white',
+        justifyContent: 'center',
+        alignItems: "center"
     },
 
     inputContain: {
