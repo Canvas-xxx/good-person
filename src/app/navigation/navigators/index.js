@@ -9,6 +9,8 @@ import News from '../../features/news/components'
 import Help from '../../features/help/components'
 import HelpInformation from '../../features/help/components/help-information'
 
+import Admin from '../../features/admin/components'
+
 const AuthNavigator = createStackNavigator({
     SplashScreen: { screen: Splash },
     LoginScreen: { screen: Login }
@@ -28,9 +30,17 @@ const HomeNavigator = createStackNavigator({
     initialRouteName: 'HomeScreen'
 })
 
+const AdminNavigator = createStackNavigator({
+    AdminHomeScreen: { screen: Admin, navigationOptions: { header: null } }
+}, {
+    headerMode: 'none',
+    initialRouteName: 'AdminHomeScreen'
+})
+
 const AppNavigator = createSwitchNavigator({
     Login: AuthNavigator,
-    App: HomeNavigator
+    App: HomeNavigator,
+    AdminApp: AdminNavigator
 }, {
     initialRouteName: 'Login'
 })
