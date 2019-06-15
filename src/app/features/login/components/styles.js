@@ -9,7 +9,8 @@ export default StyleSheet.create({
 
   header: {
     color: 'white',
-    fontSize: 30
+    fontSize: 30,
+    marginBottom: 10
   },
 
   idInput: {
@@ -18,11 +19,7 @@ export default StyleSheet.create({
     padding: 8,
     borderRadius: 8,
     borderColor: 'black',
-    borderWidth: .5
-  },
-
-  loader: {
-    height: 40,
-    width: 40
+    borderWidth: .5,
+    marginBottom: 10
   }
 });

@@ -1,4 +1,4 @@
-import { createStackNavigator, createSwitchNavigator } from 'react-navigation'
+import { createAppContainer, createStackNavigator, createSwitchNavigator } from 'react-navigation'
 
 import Splash from '../../features/splash/components'
 import Login from '../../features/login/components'
@@ -27,9 +27,11 @@ const HomeNavigator = createStackNavigator({
 
 const AppNavigator = createSwitchNavigator({
     Login: AuthNavigator,
-    App: HomeNavigator
+    // App: HomeNavigator
 }, {
     initialRouteName: 'Login'
 })
+
+const AppContainer = createAppContainer(AppNavigator)
 
 export default AppNavigator
