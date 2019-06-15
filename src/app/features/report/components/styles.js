@@ -22,6 +22,10 @@ const styles = StyleSheet.create({
         alignItems: "center",
         marginBottom: 15
     },
+    imageSelected: {
+        width: DeviceWidth,
+        height: 300,
+    },
 
     inputContain: {
         width: DeviceWidth*0.9,
