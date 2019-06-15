@@ -19,6 +19,8 @@ export default StyleSheet.create({
   },
 
   contentContain: {
+    flexDirection: 'row',
+    alignItems: 'center',
     width: DeviceWidth*.9,
     padding: 5,
     backgroundColor: 'white',

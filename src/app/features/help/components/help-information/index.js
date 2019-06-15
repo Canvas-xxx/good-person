@@ -1,24 +1,31 @@
 import React, { Component } from 'react'
-import { View, Text, ScrollView } from 'react-native'
+import { View, Text, ScrollView, Linking } from 'react-native'
 import styles from './styles'
 import Layout from '../../../../components/layout'
 
 class HelpInformation extends Component {
     render() {
+        const { navigation } = this.props
+        const title = navigation.getParam('title', 'Title')
+        const details = navigation.getParam('details', [])
+
         return (
             <Layout>
                 <View style={styles.container}>
-                    <Text style={styles.header}>ตำรวจ</Text>
+                    <Text style={styles.header}>{title}</Text>
                     <ScrollView contentContainerStyle={styles.contentContainer}>
-                        <View style={styles.contentContain}>
-                            <Text style={{fontSize: 20}}>สน.หัวหมาก: 02-123-4567</Text>
-                        </View>
-                        <View style={styles.contentContain}>
-                            <Text style={{fontSize: 20}}>สน.รามคำแหง: 02-123-4568</Text>
-                        </View>
-                        <View style={styles.contentContain}>
-                            <Text style={{fontSize: 20}}>ตำรวจ: 191</Text>
-                        </View>
+                        {
+                            details.map((item, key) => {
+                                return (
+                                    <View style={styles.contentContain} key={key}>
+                                        <Text style={{fontSize: 20}}>{item.title}: </Text>
+                                        <Text style={{fontSize: 20, textDecorationLine: 'underline', color: 'blue'}} onPress={() => { Linking.openURL(`tel:${item.tel.replace(/-/g, '')}`) }}>
+                                            {item.tel}
+                                        </Text>
+                                    </View>
+                                )
+                            })
+                        }
                     </ScrollView>
                 </View>
             </Layout>

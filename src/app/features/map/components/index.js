@@ -4,15 +4,12 @@ import { SafeAreaView } from 'react-navigation'
 import styles from './styles'
 import Layout from '../../../components/layout'
 
-class Report extends Component {
+class Map extends Component {
     render() {
-        const { navigation } = this.props
-        const title = navigation.getParam('title', 'Title')
-
         return(
             <Layout>
                 <SafeAreaView style={styles.container}>
-                    <Text style={styles.header}>{title}</Text>
+                    <Text style={styles.header}>แผนที่</Text>
                     <View style={styles.imageContain}>
                         <TouchableOpacity>
                             <Image
@@ -36,4 +33,4 @@ class Report extends Component {
     }
 }
 
-export default Report
+export default Map
