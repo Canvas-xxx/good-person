@@ -10,6 +10,8 @@ import Help from '../../features/help/components'
 import HelpInformation from '../../features/help/components/help-information'
 
 import Admin from '../../features/admin/components'
+import Details from '../../features/admin/components/details'
+import Approval from '../../features/admin/components/approval'
 
 const AuthNavigator = createStackNavigator({
     SplashScreen: { screen: Splash },
@@ -31,7 +33,9 @@ const HomeNavigator = createStackNavigator({
 })
 
 const AdminNavigator = createStackNavigator({
-    AdminHomeScreen: { screen: Admin, navigationOptions: { header: null } }
+    AdminHomeScreen: { screen: Admin, navigationOptions: { header: null } },
+    DetailsScreen: { screen: Details, navigationOptions: { headerStyle: { backgroundColor: '#0f52ba' }, headerTintColor: '#fff' } },
+    ApprovalScreen: { screen: Approval, navigationOptions: { headerStyle: { backgroundColor: '#0f52ba' }, headerTintColor: '#fff' } }
 }, {
     headerMode: 'none',
     initialRouteName: 'AdminHomeScreen'

@@ -34,7 +34,10 @@ class Admin extends Component {
                     <ScrollView contentContainerStyle={styles.contentContainer}>
                         {reportList.map((report, key) => {
                             return (
-                                <TouchableOpacity key={key} style={styles.reportContainer}>
+                                <TouchableOpacity key={key} style={styles.reportContainer}
+                                onPress={() => this.props.navigation.navigate('DetailsScreen', 
+                                    { no: `0${key}`, title: report.title, date: new Date(), place: 'ลัดดาแลนด์', description: report.shortDes, reporter: 'นาย ประยุทธ์ จึงรุ่ง' }
+                                )}>
                                     <Text>{report.title}: {report.shortDes}</Text>
                                 </TouchableOpacity>
                             )
