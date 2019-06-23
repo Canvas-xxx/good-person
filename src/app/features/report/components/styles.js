@@ -7,13 +7,11 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: "center"
     },
-
     header: {
         fontSize: 30,
         color: 'white',
         marginBottom: 15
     },
-
     imageContain: {
         width: DeviceWidth,
         height: 300,
@@ -26,7 +24,6 @@ const styles = StyleSheet.create({
         width: DeviceWidth,
         height: 300,
     },
-
     inputContain: {
         width: DeviceWidth*0.9,
         justifyContent: "center",
@@ -35,13 +32,11 @@ const styles = StyleSheet.create({
         padding: 5,
         marginBottom: 15
     },
-
     normalFont: {
         flex: 1,
         fontSize: 20,
         color: 'white'
     },
-
     textInput: {
         flex: 1.5,
         fontSize: 20,
@@ -50,6 +45,9 @@ const styles = StyleSheet.create({
         padding: 10,
         borderRadius: 8,
         backgroundColor: 'white'
+    },
+    bttnStyle: {
+        width: DeviceWidth*0.3
     }
 })
 

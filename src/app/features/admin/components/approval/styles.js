@@ -34,8 +34,6 @@ export default StyleSheet.create({
         padding: 5
     },
     bttnStyle: {
-        flex: 1,
-        marginBottom: 10,
-        width: DeviceWidth*0.8
+        width: DeviceWidth*0.3
     }
 });

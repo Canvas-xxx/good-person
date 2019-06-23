@@ -5,11 +5,11 @@ const DeviceWidth = Dimensions.get('window').width
 export default StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "space-evenly",
     alignItems: "center"
   },
   gridView: {
-    flexDirection: 'row'
+    flexDirection: 'row',
+    marginBottom: 40
   },
   gridBox: {
     width: DeviceWidth*0.4,

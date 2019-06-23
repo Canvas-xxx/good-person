@@ -30,8 +30,8 @@ class Approval extends Component {
                         <Text style={{fontSize: 20, color: 'white'}}>คำอธิบาย: </Text>
                         <TextInput style={styles.inputStyle} placeholder="คำอธิบายเพิ่มเติม" numberOfLines={4} multiline={true}></TextInput>
                     </View>
-                    <View style={styles.textContain}>
-                        <Button title="ล้างข้อมูล" titleStyle={{ color: '#000000' }} buttonStyle={{ backgroundColor: 'red' }} containerStyle={styles.bttnStyle} onPress={() => this.props.navigation.navigate('AdminHomeScreen')}></Button>
+                    <View style={[styles.textContain, { justifyContent: 'center' }]}>
+                        <Button title="ล้างข้อมูล" titleStyle={{ color: '#000000' }} buttonStyle={{ backgroundColor: 'red' }} containerStyle={[styles.bttnStyle, { marginRight: 10 }]} onPress={() => this.props.navigation.navigate('AdminHomeScreen')}></Button>
                         <Button title="ตกลง" titleStyle={{ color: '#000000' }} buttonStyle={{ backgroundColor: 'yellow' }} containerStyle={styles.bttnStyle} onPress={() => this.props.navigation.navigate('AdminHomeScreen')}></Button>
                     </View>
                 </SafeAreaView>
